@@ -1,0 +1,435 @@
+
+
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+<!-- favicon -->
+<link rel="shortcut icon" href="{% static 'images/fav-icon.png' %}">
+ <!--OUR TEACHERS CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"> 
+  
+
+
+
+    <title>STELLA MARIS CONVENT SCHOOL</title>
+  </head>
+  <body>
+
+<section class="school-page-section">
+  <div class="container">
+    <div class="school-page-header">
+      <nav class="navbar navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img src="{% static 'images/logo.png' %}"></a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="stella-maria sticky-top">
+  <div class="container school-nav-page">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid toggle-bg">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about_school">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ADMISSION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">COMMUNITY PORTAL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}#board-members-sch">OUR TEACHERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}#career">CAREER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}#contact">CONTACT US</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div>
+</section>
+
+
+{% include 'messages.html' %}
+<section class="banner-section" style="padding: 0px;">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="{% static 'images/school-banner-1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2>English medium school Nursery to 12  (CBSE)</h2>
+        <p>The Pre-Primary Section sets the tone for learning at St. Chavara Public School.<br> The onset of this formal education is overseen by trained and passionate teachers,</p>
+        <button type="button" class="btn btn-outline-light">Read More</button>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <img src="{% static 'images/school-banner.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2>English medium school Nursery to 12  (CBSE)</h2>
+        <p>The Primary Section extensively works at building and nurturing the preliminary<br>mindsets of students, in preparation for Secondary School.</p>
+        <button type="button" class="btn btn-outline-light">Read More</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/school-banner-2.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h2>English medium school Nursery to 12  (CBSE)</h2>
+        <p>The Secondary School follows the CBSE curriculum and is delivered by trained<br>and experienced professionals.</p>
+        <button type="button" class="btn btn-outline-light">Read More</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+
+
+
+
+</section>
+<section id="about_school" class="chavara-about">
+  <div class="container">
+  <h3>HISTORY OF STELLA MARIS CONVENT SCHOOL</h3>
+  <p>Congregation of the Daughters of Mary was established in the year 1938 in Kanyakumari District at Tamilnadu. The good services of the Congregation spread all over the world, making a beginning in Maharashtra in 1981. The society tries to live up to the ideas of the founders Msgr. Joseph Kuzhinjalil and Mother Mary Kallarackal, in spreading the flame of Charity. The essential effort is in proclaiming to the world that unity and happiness lies in service.</p>
+</div>
+
+</section>
+<section class="stella-v-m parallax">
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="vission">
+        <h3>Vision</h3>
+        <p>Stella Maris School Started in 2013 at Hanga with the felt need of the locality and thus create a social and educational awareness among people, which is one of our objectives. We believe in providing nothing short of the very best in education and providing well-balanced and highly competent, challenging universal citizens, with independent thoughts and individual charisma. It insists on individual care and concern for each student.</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="vission">
+        <h3>Mission</h3>
+        <p>Stella Maris School’s education is value-oriented. It encourages love and acceptance of self and realistic knowledge of the world in which we live. Every child is a precious gem for us. Help us to make them a treasure for you. We stress the total development of each child-spiritual, moral, intellectual, social, emotional, and physical development.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<section id="board-members-sch" class="our-teachers" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="sec-heading-board sec-heading text-center">
+            <h6>Board Members</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="team-slider owl-carousel owl-loaded owl-drag">
+              
+              
+              
+              
+              
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3070px, 0px, 0px); transition: all 0.45s ease 0s; width: 4826px;"><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mother_Rita_Jose.jpg' %}"></div>
+                <div class="info-area">
+                  <h4>Mother Rita Jose D. M.  (MA B. Ed)</h4>
+                  <p>Designation:- President Of Society</p>
+                </div>
+              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Sindhu_Joseph.jpg' %}"></div>
+                <div class="info-area">
+                  <h4>REV. Sr. Sindhu Joseph (MA B. Ed)</h4>
+                  <p>Designation:- Principal</p>
+                </div>
+              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mariet_Antony.jpg' %}"></div>
+                <div class="info-area">
+                  <h4>REV. Sr. Mariet Antony D. M. (MA. B. Ed)</h4>
+                  <p>Designation:- Vice Principal</p>
+                </div>
+              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Flower_Maria.jpeg' %}"></div>
+                <div class="info-area">
+                  <h4>Rev. Sr. Flower Maria D. M. (M. A.)</h4>
+                  <p>Designation:- Manager</p>
+                </div>
+              </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<section id='career' class="service-section parallax">
+<div class="container">
+  <h4>OUR PROGRAMS</h4>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <h3 class="title">Stella Maris Pre-Primary School</h3>
+                    
+                </div>
+                <p class="description">
+                    The Pre-Primary Section sets the tone for learning at Stella Maris School. The onset of this formal education is overseen by trained and passionate teachers, managed by efficient staff in tandem with the parents who form an important part of this process too.
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <h3 class="title">Stella Maris Primary School</h3>
+                    
+                </div>
+                <p class="description">
+                    The Primary Section extensively works at building and nurturing the preliminary mindsets of students, in preparation for Secondary School. We believe in the holistic development of the life skills of young students, which reflects in our pedagogy, activities and planning adequately.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <h3 class="title">Stella Maris Secondary School</h3>
+                
+                </div>
+                <p class="description">
+                    The Secondary School follows the CBSE curriculum and is delivered by trained and experienced professionals. The secondary education instils in children the requisite learning and skills - both academic and extra-curricular in preparation for their post-school experience and challenges, thus ensuring that they are well-rounded individuals when they finish their boards.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<section id="contact" class="form-container">
+  <div class="container form-section">
+      <h2>FOR MORE INFORMATION</h2>
+      <h6>WANT TO KNOW MORE ABOUT OUR SCHOOL?</h6>
+      
+      <div class="contact-form">
+          <h4>Please fill in the below</h4>
+          <form id="idForm" action="{% url 'index' %}" method="post" name="contact-form">
+              {% csrf_token %}
+              <div class="row">
+                  <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                          <label>Name*</label>
+                          <input id="{{ from.name.id_for_label }}" name="{{form.name.name}}" class="form-control" placeholder="Your Name ..." type="text" maxlength="100" required>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                          <label>Email*</label>
+                          <input id="{{ from.email.id_for_label }}" name="{{form.email.name}}" class="form-control" placeholder="Email ..." type="email" maxlength="100" required>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                          <label>Phone*</label>
+                          <input id="{{ from.mobile.id_for_label }}" name="{{form.mobile.name}}" class="form-control" placeholder="Phone ..." type="text" maxlength="20" required>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="form-group">
+                          <label>Subject</label>
+                          <input id="{{ from.subject.id_for_label }}" name="{{form.subject.name}}" class="form-control" placeholder="Subject ..." type="text" maxlength="250">
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="form-group">
+                          <label>Your Query*</label>
+                          <textarea class="form-control" name="{{form.query.name}}" id="{{ form.query.id_for_label }}" placeholder="Enter Your Queries Here ..." rows="2"></textarea>
+                      </div>
+                  </div>
+              </div>
+              <button class="btn btn-success" type="submit">SUBMIT</button>
+          </form>
+          
+  </div>
+</section>
+
+
+   <section class="contact-head" style="padding:0px;">
+     <img src="{% static 'images/contact-head.png' %}" class="img-fluid" alt="...">
+   </section>
+   <section class="footer-container" style="padding: 0px;">
+     <div class="container">
+       <div class="site-map">
+         <div class="row">
+           <div class="col-12 col-sm-3 col-lg-3 footer-logo">
+             <img src="{% static 'images/logo.png' %}">
+             <p>Stella Maris Convent School started in 2013 at Hanga Maharashtra by the Congregation of the Daughters of Mary. The School is managed by the Society of the Daughters of Mary Chanda.</p>
+           </div>
+           <div class="col-12 col-sm-3 col-lg-3 quik-lnk">
+       
+           <h5>Quik Links</h5>
+           <ul>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Programs</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Who we are</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Who we can help</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Our Team</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>An Individualized Approach</li></a>
+           </ul>
+           </div>
+           <div class="col-12 col-sm-3 col-lg-3 quik-lnk">
+             <h5>Quik Links</h5>
+           <ul>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Sucess Stories</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Careers</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Terms & Conditions</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Privacy Policy</li></a>
+             <a href="#"><li><i class="fas fa-chevron-right"></i>Privacy Policy</li></a>
+           </ul>
+           </div>
+             <div class="col-12 col-sm-3 col-lg-3">
+             <h5>Connect with Social  Media</h5>
+             <div class="footer-social-icons">
+    
+   <ul>
+  <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+<div class="contact-details">
+<p><i class="far fa-paper-plane"></i><a href="mailto:stellamarishanga@gmail.com">stellamarishanga@gmail.com</a></p>
+<p><i class="fas fa-mobile-alt"></i>+91 86 00 31 63 70</p>
+<p><i class="fas fa-mobile-alt"></i>+91 86 00 31 63 70</p>
+</div>
+           </div>
+         </div>
+       </div>
+       <hr>
+       <p>Copyright ©  2022  <a href="">STELLA MARRIS COVENT SCHOOL</a>. All rights reserved.</p>
+     </div>
+   </section>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+      <!--OUR TEACHERS JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script> 
+
+  <script>
+         $('.team-slider').owlCarousel({
+             loop: true,            
+             nav: false,
+             autoplay: true,
+             autoplayTimeout: 5000,
+             smartSpeed: 450,
+             margin: 20,
+             responsive: {
+                 0: {
+                     items: 1
+                 },
+                 768: {
+                     items: 2
+                 },
+                 991: {
+                     items: 3
+                 },
+                 1200: {
+                     items: 3
+                 },
+                 1920: {
+                     items: 3
+                 }
+             }
+         });
+  </script>
+
+  <!--OUR TEACHERS JS END-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
