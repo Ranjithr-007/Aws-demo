@@ -134,14 +134,15 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'stellamarisahmednagar@gmail.com'
-EMAIL_HOST_PASSWORD = 'hangastellamaris'
+EMAIL_HOST = 'smtp.zoho.in'
+EMAIL_HOST_USER = 'info@smhanga.org'
+EMAIL_HOST_PASSWORD = 'H@ngastellamar1s'
 ADMIN_RECEIVE_EMAIL = 'stellamarishanga@gmail.com'
-DEFAULT_FROM_EMAIL = 'stellamarisahmednagar@gmail.com'
+DEFAULT_FROM_EMAIL = 'info@smhanga.org'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
 
 
 
