@@ -396,7 +396,13 @@
   </script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script> 
-
+  <script>
+    setTimeout(function(){
+        if ($('#msg').length > 0) {
+            $('#msg').remove();
+        }
+    }, 5000)
+</script>
   <script>
          $('.team-slider').owlCarousel({
              loop: true,            
