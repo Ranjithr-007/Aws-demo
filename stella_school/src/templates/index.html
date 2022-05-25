@@ -83,7 +83,7 @@
           <a class="nav-link" href="#">ADMISSION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">COMMUNITY PORTAL</a>
+          <a class="nav-link" href="{% url 'index' %}#documents">COMMUNITY PORTAL</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'index' %}#board-members-sch">OUR TEACHERS</a>
@@ -182,6 +182,7 @@
 </div>
 
 </section>
+
 
 
 <section id="board-members-sch" class="our-teachers" id="team">
@@ -396,7 +397,13 @@
   </script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script> 
-
+  <script>
+    setTimeout(function(){
+        if ($('#msg').length > 0) {
+            $('#msg').remove();
+        }
+    }, 5000)
+</script>
   <script>
          $('.team-slider').owlCarousel({
              loop: true,            

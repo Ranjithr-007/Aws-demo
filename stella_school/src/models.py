@@ -4,7 +4,6 @@ from django.dispatch import receiver
 from django.conf import settings
 from django.core.mail import send_mail
 
-
 class Contacts(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
     mobile = models.CharField(max_length=20, null=True, blank=True)

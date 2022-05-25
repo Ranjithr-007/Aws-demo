@@ -1,0 +1,1154 @@
+@charset "UTF-8";
+
+/* CSS Document */
+body{font-family: 'Open Sans', sans-serif;}
+
+
+
+
+
+.stella-maria{ background-color: #f1cc39; border-top: 1px solid #fff; border-bottom: 1px solid #fff; }
+.navbar-light .navbar-nav .nav-link {
+    color: #282d33;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: color: #fff;
+}
+.nav-item img{ width: 250px; }
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 13px; font-family: 'Josefin Sans', sans-serif; font-weight: 600;
+}
+.navbar-nav .nav-item{ width: inherit; }
+.navbar-nav .nav-link {
+
+    height:inherit;
+}
+.banner-section .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 10.25rem;
+    color: #fff;
+    text-align:left;
+}
+.banner-section .carousel-caption h2{ 
+font-family: 'Montserrat', sans-serif; font-size: 32px; font-weight: bold;  }
+.about-section{ border-left: 10px solid #0d3f90;  border-right: 10px solid #002f73; padding-top: 15px !important; }
+.about-bg { background-color: #f2f2f2; padding-top: 50px; padding-bottom: 50px; }
+.readmore {
+    float: left;
+}
+.readmore a {
+    color: #0c3c8b;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.readmore-right{ float: right; }
+.readmore-right a {
+    color: #0c3c8b;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500;
+}
+.details-section img{box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.6);}
+.about-text-section{ display: flex; align-items: center; }
+.about-text h3{ text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600; color: #022e6f; padding-bottom: 15px; }
+.about-text p{ font-family: 'Montserrat', sans-serif; font-size: 14px; color: #000; padding-right: 70px; }
+
+.form-section{ width: 70%; padding-bottom: 40px; }
+.form-section h2{ font-size: 30px; font-family: 'Josefin Sans', sans-serif; font-weight: 700; color: #24282d; text-transform: uppercase; }
+.form-section h6{ font-size: 16px; font-family: 'Josefin Sans', sans-serif; font-weight: 600; color: #24282d; text-transform: uppercase; padding-bottom: 10px; }
+.form-container { padding-top: 100px; }
+.contact-form{ background-color: #24282d; padding-left: 35px; padding-right: 35px; padding-top: 30px; padding-bottom: 30px; font-family: 'Montserrat', sans-serif; } 
+
+.contact-form h4{font-family: 'Josefin Sans', sans-serif; font-weight: 600; color: #fff; text-transform: uppercase; text-align: center; font-size: 20px; padding-bottom: 20px;}
+.contact-form label{ color: #fff; }
+.contact-form .form-control{ margin-bottom: 15px; } 
+.contact-form .btn { width: 100%; font-weight: 600; margin-top: 10px; }
+.contact-form .btn-success {
+    color: #fff;
+    background-color: #5abe67;
+    border-color: #5abe67;
+}
+.contact-form .btn-success:hover {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    color: #5abe67; font-weight: bold;
+}
+.contact-head{ }
+.footer-container{  background-color: #f1cc39; }
+.footer-container p{ text-align: center; color: #23272b; font-size: 13px; margin-bottom: 0px; padding-bottom: 20px; }
+.footer-container a{  color: #000; font-weight: bold; text-decoration: none;  }
+.footer-container a:hover{  color: #218ea6;}
+
+.contact-head img{ width: 100%; }
+.site-map { padding-top: 40px; }
+.site-map img{ width: 100%; }
+.footer-logo p {
+    font-size: 14px; font-family: 'Montserrat', sans-serif; color: #24282d; text-align: justify; padding-top: 15px;
+
+}
+.site-map h5{font-size: 16px;
+font-weight: 600;
+color: #23272b;
+padding-bottom: 10px; font-family: 'Montserrat', sans-serif; }
+.site-map li {
+    font-size: 14px;
+    color: #24282d;
+    padding-bottom: 10px; list-style: none; font-weight: 500;
+}
+.site-map li:hover {
+    font-size: 14px;
+    color: #e1e1e1;
+    padding-bottom: 10px; 
+}
+.site-map i {
+    padding-right: 10px;
+    font-size: 10px;
+}
+.site-map a {
+    text-decoration: none;
+}
+.site-map ul{ padding-left: 0px; }
+.quik-lnk{ padding-left: 100px; }
+.footer-social-icons{ position: absolute; }
+.footer-social-icons ul {
+  position:absolute;
+  top:50%;
+  left:50%;
+ 
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+.footer-social-icons ul li {
+  list-style: none;
+}
+
+.footer-social-icons ul li a {
+  position: relative;
+
+  display:block;
+  text-align:center;
+
+padding-right: 8px;
+  box-sizing: border-box;
+  text-decoration:none;
+
+  transition: .5s;
+}
+
+.footer-social-icons ul li a:hover {
+
+  text-decoration:none;
+}
+
+.footer-social-icons ul li a .fab {
+  widht: 100%;
+  height:100%;
+  display:block;
+
+
+ 
+  font-size:24px;
+  color: #000;
+  transition: .5s;
+}
+
+.footer-social-icons ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+.footer-social-icons ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+.footer-social-icons ul li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+.footer-social-icons ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+.footer-social-icons ul li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
+.contact-details{ padding-top: 44px; }
+.contact-details i{ color: #000; font-size: 20px;}
+
+.contact-details p{ font-size: 14px; color:#23272b; text-align:left; }
+.footer-container hr{ background-color: #fff; }
+
+.our-teachers{ background-color: #f4f4f4;}
+#team {
+    padding: 30px 0; padding-bottom: 100px;
+}
+.sec-heading h6 {
+    font-family: 'Allura', cursive;
+    font-size: 65px; color: #002f73;
+}
+.sec-heading-board h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:22px; text-transform: uppercase; color:#272c30; font-weight: 600; padding-bottom: 25px; padding-top: 25px;
+}
+
+.single-box {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff
+}
+.info-area {
+    padding: 0 20px 45px;
+}
+.img-area {
+    overflow: hidden;
+    padding: 15px 0 15px;
+}
+.img-area img {
+    margin: 0 auto;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    max-width: 230px
+}
+.single-box:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.info-area i {
+    display: inline-block;
+    color: #ffb400;
+    margin: 0 4px;
+}
+.info-area h4 {
+    font-weight: 600
+}
+.info-area h5 {
+    color: #3b04db;
+    margin: 10px 0 0;
+    font-weight: 600
+}
+
+.team-slider .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    text-align: center;
+    width: 100%;
+}
+.team-slider button.owl-dot {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #262626;
+}
+.team-slider .owl-dot.active {
+    background-color: #f1cc39 !important;
+}
+
+.move-animation {
+    position: relative;
+    -webkit-animation: move-animation 2s ease-in-out infinite;
+    animation: move-animation 2s ease-in-out infinite;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+ background-color: #aeaeae !important;
+ color:#fff;
+ border:none;
+ padding:0!important;
+ font:inherit
+}
+@-webkit-keyframes move-animation {
+    0% {
+        top: 3px;
+    }
+    50% {
+        top: -3px;
+    }
+    100% {
+        top: 3px;
+    }
+}
+
+
+
+
+
+
+
+/* SCHOOL PAGE-1 START */
+
+
+.school-page-section{ background-color: #f1cc39; }
+.navbar-brand img {
+  width: 220px;
+  border-radius: 2px;
+}
+.school-page-header .btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+}
+
+.school-page-header .btn-outline-success:hover {
+    color: #0c3c8b;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.school-nav-page .navbar { padding-bottom: 0px; padding-top: 3px; }
+
+
+
+.chavara-about h3{ text-transform: uppercase; font-family: 'Montserrat', sans-serif; text-align: center; padding-top: 70px; font-size: 22px; font-weight: 600; color: #272c30; padding-bottom: 15px; }
+.chavara-about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 25px;
+    font-weight: 500;
+}
+
+.stella-v-m{ background-image: url(../images/board.jpg); background-size: cover; padding-top: 80px; padding-bottom: 80px; background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; }
+.vission{ background-color: #f1cc39; color: #272c30; border-radius: 5px; min-height: 185px; }
+
+.stella-v-m h3{ font-size: 22px; text-align: center; padding-top: 20px; font-weight: 600; text-transform: uppercase; }
+.stella-v-m p{ font-size: 14px; color: #555555; padding: 20px; padding-top: 0px; text-align: justify; }
+
+
+
+
+
+
+
+
+
+
+.service-section{  padding-bottom: 80px; padding-top: 80px;
+  /* The image used */
+  background-image: url(../images/classroom.jpg);
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.service-section h4{
+    text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+
+font-size: 22px;
+font-weight: 800;
+color: #fff; padding-bottom: 25px;
+
+}
+
+
+
+
+.serviceBox{
+    padding: 20px 25px;
+    border-radius: 5px;
+    text-align: right;
+    overflow: hidden;
+    z-index: 1;
+    position: relative; min-height: 300px; background-color: #fff;
+}
+.serviceBox:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: #2b4150;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover:before{ left: 0; }
+.serviceBox:after{
+    content: "";
+    width: 7px;
+    height: 0;
+    border-radius: 5px;
+    background: #f1cc39;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox:hover:after{ height: 100%; }
+.serviceBox .service-icon{
+    color: #002c51;
+    margin-bottom: 10px;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox .service-icon:hover{
+    color: #fff;
+    margin-bottom: 10px;
+    transition: all 0.5s ease 0s;
+}
+.serviceBox .service-icon i{ font-size: 30px; }
+.serviceBox .title{
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize; text-align: left; padding-top: 30px;
+
+}
+.serviceBox .description{
+    font-size: 14px;
+    color: #555;
+    line-height: 25px;
+    transition: all 0.5s ease 0s; text-align: left;
+}
+.serviceBox:hover .service-icon,
+.serviceBox:hover .description{ color: #fff; }
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 30px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE START */
+
+@media screen and (max-width:1399px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+
+}
+@media screen and (max-width:1200px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+/* PRE-SCHOOL START */
+.pre-school-banner {
+    background-image: url(../images/pre-banner.jpg);
+    width: 100%;
+    height: 595px;
+    background-size: cover;
+}
+.about p {
+    font-family: 'Schoolbell', cursive;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+}
+.about {
+    background-image: url(../images/about.jpg);
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+}
+
+}
+@media screen and (max-width:1119px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.banner-section .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: -2.75rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 10.25rem;
+    color: #fff;
+    text-align: left;
+}
+
+.about-bg img{ width: 100%; }
+
+
+}
+
+@media screen and (max-width:992px) {
+.quik-lnk {
+    padding-left: 0px;
+}
+.about-bg img{ width: 100%; padding-left: 20px; }
+.details-section img{ width: 100%; }
+.details-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.banner-section .carousel-caption {
+
+    padding-bottom: 3.25rem;
+   
+}
+.header-top .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.toggle-bg{ background-color: #0c3c8b; padding-top: 5px; padding-bottom: 5px;}
+.navbar-toggler { 
+    padding: 0px 5px;
+    font-size: 13px;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    transition: box-shadow .15s ease-in-out;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.10);
+    border: none;
+    background-color: #fff;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.10);
+    border: none;
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(255, 255, 255, 0.9); text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+
+
+
+/* SCHOOL page 1 START */
+
+.chavara-about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    font-weight: 500; text-align: justify;
+}
+.school-nav-page{ margin-bottom: 4px; }
+.chavar-banner {
+    background-image: url(../images/chavara-school.jpg);
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.chavar-banner h2 {
+
+    font-size: 26px;
+    margin: 10px 0 0 10px;
+    white-space: inherit;
+    
+}
+.serviceBox {
+    padding: 20px 25px;
+    border-radius: 5px;
+    text-align: right;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    min-height: 588px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:767px) {
+.nav-item img {
+    width: 75%;
+
+}
+.header-top .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.toggle-bg{ background-color: #0c3c8b; padding-top: 5px; padding-bottom: 5px;}
+.navbar-toggler { 
+    padding: 0px 5px;
+    font-size: 13px;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    transition: box-shadow .15s ease-in-out;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.10);
+    border: none;
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(255, 255, 255, 0.9); text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.banner-section .carousel-caption {
+    text-align: center;
+    font-size: 8px;
+}
+.banner-section .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 40px;
+    left: 0px;
+   
+    padding-bottom: 0px;
+  
+    text-align: center;
+    font-size: 8px;
+}
+.d-none {
+    display: inherit;
+}
+.banner-section .carousel-caption h2 {
+   
+    font-size: 12px;
+
+}
+.carousel-caption .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    
+    padding: 2px 5px;
+    font-size: 5px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.carousel-caption .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.carousel-caption .btn-outline-light:hover {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.carousel-indicators{ display: none; }
+.about-bg img{ width: 250px; }
+.about-text h3 {
+
+    font-size: 18px; text-align: center; padding-top: 20px; padding-left: 20px; padding-right: 20px;
+  
+}
+.about-text p {
+
+    font-size: 14px;
+
+    padding-right: 20px; padding-left: 20px; text-align: justify; 
+}
+.section-text h3 {
+
+    font-size: 18px;
+
+    padding-bottom: 15px;
+    text-align: center;
+}
+.section-text p {
+ 
+    font-size: 14px;
+
+    text-align: justify; padding-left: 20px; padding-right: 20px;
+}
+.details-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.section-text-two h3 {
+
+    font-size: 18px;
+  
+    padding-bottom: 15px;
+    text-align: center; padding-top: 20px;
+}
+.section-text-two p {
+  
+    font-size: 14px;
+
+    text-align: justify; padding-left: 20px; padding-right: 20px;
+}
+.last-img{ padding-bottom: 40px; }
+.form-section {
+    width: 100%;
+    padding-bottom: 40px;
+}
+.form-container {
+    padding-top: 70px;
+}
+.form-section h2 {
+    font-size: 20px; text-align: center;
+}
+.form-section h6 {
+    font-size: 12px; text-align: center;
+ 
+}
+.contact-form h4 {
+
+    font-size: 14px;
+ 
+}
+.quik-lnk {
+    padding-left: 15px;
+}
+.site-map img {
+    width: 50%; padding-bottom: 25px;
+}
+
+/* DISPLAY NONE IN Mobile SCREEN */
+
+.mobile-pic{ display: inherit; }
+.main-pic{ display: none; }
+.details-section img {
+    width: 50%;
+
+}
+.section-text h5 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    text-align: center;
+    padding-top: 15px;
+}
+.section-text h6 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+}
+.readmore-right {
+    float: inherit;
+    
+}
+.section-text-two h5 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    text-align: center; padding-top: 15px;
+}
+.section-text-two h6 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+}
+.section-text-two{ padding-bottom: 40px; }
+.readmore {
+    float: inherit;
+}
+.therd-btn{ padding-bottom: 40px; }
+
+
+/* SCHOOL PAGE-1 */
+
+.school-nav-page{ margin-bottom: 4px; }
+.chavar-banner {
+    background-image: url(../images/chavara-school.jpg);
+    width: 100%;
+    height: 225px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.chavar-banner h2 {
+
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+    white-space: inherit;
+    
+}
+.chavara-about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    font-weight: 500; text-align: justify;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width:499px) {
+
+
+.nav-item img {
+    width: 100%;
+
+}
+.header-top .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.toggle-bg{ background-color: #0c3c8b; padding-top: 5px; padding-bottom: 5px;}
+.navbar-toggler { 
+    padding: 0px 5px;
+    font-size: 13px;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    transition: box-shadow .15s ease-in-out;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.10);
+    border: none;
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(255, 255, 255, 0.9); text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; text-align: center; border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.banner-section .carousel-caption {
+    text-align: center;
+    font-size: 8px;
+}
+.banner-section .carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 20px;
+    left: 0px;
+   
+    padding-bottom: 0px;
+  
+    text-align: center;
+    font-size: 8px;
+}
+.d-none {
+    display: inherit;
+}
+.banner-section .carousel-caption h2 {
+   
+    font-size: 12px;
+
+}
+.carousel-caption .btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    
+    padding: 2px 5px;
+    font-size: 5px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.carousel-caption .btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.carousel-caption .btn-outline-light:hover {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+.carousel-indicators{ display: none; }
+.about-bg img{ width: 250px; }
+.about-text h3 {
+
+    font-size: 18px; text-align: center; padding-top: 20px; padding-left: 20px; padding-right: 20px;
+  
+}
+.about-text p {
+
+    font-size: 14px;
+
+    padding-right: 20px; padding-left: 20px; text-align: justify; 
+}
+.section-text h3 {
+
+    font-size: 18px;
+
+    padding-bottom: 0px;
+    text-align: center;
+}
+.section-text p {
+ 
+    font-size: 14px;
+
+    text-align: justify; padding-left: 20px; padding-right: 20px;
+}
+.details-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.section-text-two h3 {
+
+    font-size: 18px;
+  
+    padding-bottom: 0px;
+    text-align: center; padding-top: 0px;
+}
+.section-text-two p {
+  
+    font-size: 14px;
+
+    text-align: justify; padding-left: 20px; padding-right: 20px;
+}
+.last-img{ padding-bottom: 40px; }
+.form-section {
+    width: 100%;
+    padding-bottom: 40px;
+}
+.form-container {
+    padding-top: 70px;
+}
+.form-section h2 {
+    font-size: 20px; text-align: center;
+}
+.form-section h6 {
+    font-size: 12px; text-align: center;
+ 
+}
+.contact-form h4 {
+
+    font-size: 14px;
+ 
+}
+.quik-lnk {
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* DISPLAY NONE IN Mobile SCREEN */
+
+.mobile-pic{ display: inherit; }
+.main-pic{ display: none; }
+.details-section img {
+    width: 50%;
+
+}
+.section-text h5 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    text-align: center;
+    padding-top: 15px;
+}
+.section-text h6 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+}
+.readmore-right {
+    float: inherit;
+    
+}
+.section-text-two h5 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #787878;
+    text-align: center; padding-top: 15px;
+}
+.section-text-two h6 {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+}
+.section-text-two{ padding-bottom: 40px; }
+.readmore {
+    float: inherit;
+}
+.therd-btn{ padding-bottom: 40px; }
+
+
+
+/* SCHOOL PAGE-1 */
+.school-nav-page{ margin-bottom: 4px; }
+.chavar-banner {
+    background-image: url(../images/chavara-school.jpg);
+    width: 100%;
+    height: 112px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+   
+}
+.chavar-banner h2 {
+
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+    white-space: inherit;
+    
+}
+.chavara-about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #555;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    font-weight: 500; text-align: justify;
+}
+
+}
