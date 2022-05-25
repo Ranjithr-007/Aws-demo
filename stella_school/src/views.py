@@ -21,5 +21,6 @@ def homepage(request):
 def calendar(request):
     return render(request, 'calender.html')
 
+
 def school_fee(request):
     return render(request, 'school_fee.html')
