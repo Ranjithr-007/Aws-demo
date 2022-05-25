@@ -3,5 +3,5 @@ from .views import *
 
 urlpatterns = [
     path('', homepage, name='index'),
-    path('calender/', calender, name ='calender'),
+    path('academic-calender/', calender, name ='calender'),
 ]
