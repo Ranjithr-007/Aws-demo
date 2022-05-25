@@ -23,3 +23,5 @@ def calendar(request):
 
 def school_fee(request):
     return render(request, 'school_fee.html')
+
+

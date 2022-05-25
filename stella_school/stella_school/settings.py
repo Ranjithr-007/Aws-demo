@@ -149,6 +149,8 @@ EMAIL_USE_SSL = False
 
 
 
+
+
 MESSAGE_TAGS = {
     messages.INFO: 'alert alert-info',
     messages.SUCCESS: 'alert alert-success',
