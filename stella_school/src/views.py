@@ -17,3 +17,6 @@ def homepage(request):
             messages.success(request, 'We will get back to you shortly!!!')
             return redirect('index')
     return render(request, 'index.html', {'form': form})
+
+def calender(request):
+    return render(request, 'calender.html')
