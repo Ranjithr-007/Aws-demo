@@ -18,5 +18,5 @@ def homepage(request):
             return redirect('index')
     return render(request, 'index.html', {'form': form})
 
-def calender(request):
+def calendar(request):
     return render(request, 'calender.html')
