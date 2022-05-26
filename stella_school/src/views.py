@@ -1,3 +1,4 @@
+import re
 from django.contrib import messages
 from multiprocessing import context
 import os
@@ -19,8 +20,17 @@ def homepage(request):
     return render(request, 'index.html', {'form': form})
 
 def calendar(request):
-    return render(request, 'calender.html')
+    return render(request, 'calendar.html')
 
 
 def school_fee(request):
     return render(request, 'school_fee.html')
+
+def noc(request):
+    return render(request, 'noc.html')
+
+def rte(request):
+    return render(request, 'rte.html')
+
+def water_sanitation_certificate(request):
+    return render(request, 'sanitation_certificate.html')
