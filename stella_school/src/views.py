@@ -34,3 +34,7 @@ def rte(request):
 
 def water_sanitation_certificate(request):
     return render(request, 'sanitation_certificate.html')
+
+
+def society_registration_certificate(request):
+    return render(request, 'society_registration_certificate.html')
