@@ -9,6 +9,9 @@ urlpatterns = [
     path('rte/', rte, name='rte'),
     path('water-sanitation-certificate/', water_sanitation_certificate, name='water_sanitation_certificate'),
     path('school_fee/',school_fee, name='school_fee'),
-    path('society-registration-certificate', society_registration_certificate, name='society_registration_certificate')
+    path('society-registration-certificate', society_registration_certificate, name='society_registration_certificate'),
+    path('pta/', pta, name='pta'),
+    path('smc/', school_managing_commitee, name='school_managing_commitee'),
+
 ]
 

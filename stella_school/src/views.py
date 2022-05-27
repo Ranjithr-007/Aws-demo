@@ -38,3 +38,10 @@ def water_sanitation_certificate(request):
 
 def society_registration_certificate(request):
     return render(request, 'society_registration_certificate.html')
+
+
+def pta(request):
+    return render(request, 'pta.html')
+
+def school_managing_commitee(request):
+    return render(request, 'school_managing_commitee.html')
