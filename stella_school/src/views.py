@@ -45,3 +45,7 @@ def pta(request):
 
 def school_managing_commitee(request):
     return render(request, 'school_managing_commitee.html')
+
+
+def building_safety(request):
+    return render(request, 'building_safety.html')

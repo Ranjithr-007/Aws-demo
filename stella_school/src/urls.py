@@ -12,6 +12,7 @@ urlpatterns = [
     path('society-registration-certificate', society_registration_certificate, name='society_registration_certificate'),
     path('pta/', pta, name='pta'),
     path('smc/', school_managing_commitee, name='school_managing_commitee'),
+    path('building-safety', building_safety, name='building_safety'),
 
 ]
 
