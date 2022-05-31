@@ -49,3 +49,7 @@ def school_managing_commitee(request):
 
 def building_safety(request):
     return render(request, 'building_safety.html')
+
+
+def fire_safety(request):
+    return render(request, 'fire_safety.html')

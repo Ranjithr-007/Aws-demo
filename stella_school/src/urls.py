@@ -13,6 +13,6 @@ urlpatterns = [
     path('pta/', pta, name='pta'),
     path('smc/', school_managing_commitee, name='school_managing_commitee'),
     path('building-safety', building_safety, name='building_safety'),
-
+    path('fire-safety', fire_safety, name='fire_safety')
 ]
 
