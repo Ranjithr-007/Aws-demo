@@ -53,3 +53,7 @@ def building_safety(request):
 
 def fire_safety(request):
     return render(request, 'fire_safety.html')
+
+
+def deo(request):
+    return render(request, 'deo.html')
