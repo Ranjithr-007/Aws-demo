@@ -19,6 +19,10 @@ def homepage(request):
             return redirect('index')
     return render(request, 'index.html', {'form': form})
 
+
+def documents(request):
+    return render(request, 'documents.html')
+
 def calendar(request):
     return render(request, 'calendar.html')
 

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+
+{% block content %}
+
+<section>
+
+<table class="table">
+    <table class="table table-bordered">
+        <tr class="table-active">
+        <th scope="col">SL.NO.</th>
+        <th scope="col">DOCUMENTS / INFORMATION</th>
+        <th scope="col">DOCUMENTS</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Academic Calender</td>
+        <td><img src="{% static 'images/pdf.jpg' %}"  width="30" height="30"><a href="{% static 'media/NOC.pdf' %}" download="">Click Here</a></td>
+       
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>School Fee</td>
+        <td><img src="{% static 'images/pdf.jpg' %}"  width="30" height="30"><a href="{% static 'media/NOC.pdf' %}" download="">Click Here</a></td>
+       
+      </tr>
+      <tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>NOC</td>
+          <td><img src="{% static 'images/pdf.jpg' %}"  width="30" height="30"><a href="{% static 'media/NOC.pdf' %}" download="">Click Here</a></td>
+         
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>RTE</td>
+          <td><img src="{% static 'images/pdf.jpg' %}"  width="30" height="30"><a href="{% static 'media/NOC.pdf' %}" download="">Click Here</a></td>
+         
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Water Sanitation Certificate</td>
+          <td><img src="{% static 'images/pdf.jpg' %}"  width="30" height="30"><a href="{% static 'media/NOC.pdf' %}" download="">Click Here</a></td>
+         
+        </tr>
+    </tbody>
+  </table>
+
+
+</section>
+
+{% endblock %}
