@@ -10,9 +10,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <script src="dist/spotlight.bundle.js"></script>
 <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
 
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -74,25 +75,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">HOME</a>
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about_school">ABOUT US</a>
+          <a class="nav-link" href="#">ABOUT US</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">ADMISSION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'documents' %}">DOCUMENTS</a>
+          <a class="nav-link" href="#">COMMUNITY PORTAL</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'index' %}#board-members-sch">OUR TEACHERS</a>
+          <a class="nav-link" href="#">OUR TEACHERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'index' %}#career">CAREER</a>
+          <a class="nav-link" href="#">CAREER</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'index' %}#contact">CONTACT US</a>
+          <a class="nav-link" href="#">CONTACT US</a>
         </li>
         
         
@@ -105,18 +106,17 @@
 </section>
 
 
-{% include 'messages.html' %}
+
 <section class="banner-section" style="padding: 0px;">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4" class=""></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item">
-      <img src="{% static 'images/banner.jpg' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images/school-banner-1.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block">
         <h2>English medium school Nursery to 12  (CBSE)</h2>
         <p>The Pre-Primary Section sets the tone for learning at St. Chavara Public School.<br> The onset of this formal education is overseen by trained and passionate teachers,</p>
@@ -124,7 +124,7 @@
       </div>
     </div>
     <div class="carousel-item active">
-      <img src="{% static 'images/banner-2.jpg' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images/school-banner.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block">
         <h2>English medium school Nursery to 12  (CBSE)</h2>
         <p>The Primary Section extensively works at building and nurturing the preliminary<br>mindsets of students, in preparation for Secondary School.</p>
@@ -132,15 +132,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="{% static 'images/banner-1.jpg' %}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h2>English medium school Nursery to 12  (CBSE)</h2>
-        <p>The Secondary School follows the CBSE curriculum and is delivered by trained<br>and experienced professionals.</p>
-        <button type="button" class="btn btn-outline-light">Read More</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'images/banner-3.jpg' %}" class="d-block w-100" alt="...">
+      <img src="{% static 'images/school-banner-2.jpg' %}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-md-block">
         <h2>English medium school Nursery to 12  (CBSE)</h2>
         <p>The Secondary School follows the CBSE curriculum and is delivered by trained<br>and experienced professionals.</p>
@@ -164,7 +156,7 @@
 
 
 </section>
-<section id="about_school" class="chavara-about">
+<section class="chavara-about">
   <div class="container">
   <h3>HISTORY OF STELLA MARIS CONVENT SCHOOL</h3>
   <p>Congregation of the Daughters of Mary was established in the year 1938 in Kanyakumari District at Tamilnadu. The good services of the Congregation spread all over the world, making a beginning in Maharashtra in 1981. The society tries to live up to the ideas of the founders Msgr. Joseph Kuzhinjalil and Mother Mary Kallarackal, in spreading the flame of Charity. The essential effort is in proclaiming to the world that unity and happiness lies in service.</p>
@@ -193,8 +185,7 @@
 </section>
 
 
-
-<section id="board-members-sch" class="our-teachers" id="team">
+<section class="our-teachers" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -215,28 +206,70 @@
               
               
             <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3070px, 0px, 0px); transition: all 0.45s ease 0s; width: 4826px;"><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mother_Rita_Jose.jpg' %}"></div>
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
                 <div class="info-area">
-                  <h4>Mother Rita Jose D. M.  (MA B. Ed)</h4>
-                  <p>Designation:- President Of Society</p>
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
                 </div>
               </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Sindhu_Joseph.jpg' %}"></div>
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/593GTHB7/4.png"></div>
                 <div class="info-area">
-                  <h4>REV. Sr. Sindhu Joseph (MA B. Ed)</h4>
-                  <p>Designation:- Principal</p>
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
                 </div>
               </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mariet_Antony.jpg' %}"></div>
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/tJCrp53r/5.png"></div>
                 <div class="info-area">
-                  <h4>REV. Sr. Mariet Antony D. M. (MA. B. Ed)</h4>
-                  <p>Designation:- Vice Principal</p>
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
                 </div>
               </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Flower_Maria.jpeg' %}"></div>
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
                 <div class="info-area">
-                  <h4>Rev. Sr. Flower Maria D. M. (M. A.)</h4>
-                  <p>Designation:- Manager</p>
+                  <h4>JEREMY DUPONT</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/593GTHB7/4.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/tJCrp53r/5.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item cloned active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
+                <div class="info-area">
+                  <h4>JEREMY DUPONT</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item cloned active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                </div>
+              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
+                <div class="info-area">
+                  <h4>Person's Name</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
                 </div>
               </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
           </div>
@@ -249,7 +282,7 @@
 
 
 
-<section id='career' class="service-section parallax">
+<section class="service-section parallax">
 <div class="container">
   <h4>OUR PROGRAMS</h4>
     <div class="row">
@@ -291,56 +324,120 @@
 
 
 
-<section id="contact" class="form-container">
-  <div class="container form-section">
-      <h2>FOR MORE INFORMATION</h2>
-      <h6>WANT TO KNOW MORE ABOUT OUR SCHOOL?</h6>
-      
-      <div class="contact-form">
-          <h4>Please fill in the below</h4>
-          <form id="idForm" action="{% url 'index' %}" method="post" name="contact-form">
-              {% csrf_token %}
-              <div class="row">
-                  <div class="col-sm-6">
-                      <!-- text input -->
-                      <div class="form-group">
-                          <label>Name*</label>
-                          <input id="{{ from.name.id_for_label }}" name="{{form.name.name}}" class="form-control" placeholder="Your Name ..." type="text" maxlength="100" required>
-                      </div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="form-group">
-                          <label>Email*</label>
-                          <input id="{{ from.email.id_for_label }}" name="{{form.email.name}}" class="form-control" placeholder="Email ..." type="email" maxlength="100" required>
-                      </div>
-                  </div>
-                  <div class="col-sm-6">
-                      <!-- text input -->
-                      <div class="form-group">
-                          <label>Phone*</label>
-                          <input id="{{ from.mobile.id_for_label }}" name="{{form.mobile.name}}" class="form-control" placeholder="Phone ..." type="text" maxlength="20" required>
-                      </div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="form-group">
-                          <label>Subject</label>
-                          <input id="{{ from.subject.id_for_label }}" name="{{form.subject.name}}" class="form-control" placeholder="Subject ..." type="text" maxlength="250">
-                      </div>
-                  </div>
-                  <div class="col-sm-12">
-                      <div class="form-group">
-                          <label>Your Query*</label>
-                          <textarea class="form-control" name="{{form.query.name}}" id="{{ form.query.id_for_label }}" placeholder="Enter Your Queries Here ..." rows="2"></textarea>
-                      </div>
-                  </div>
-              </div>
-              <button class="btn btn-success" type="submit">SUBMIT</button>
-          </form>
-          
+<section class="our-gallery">
+  <div class="container">
+    <h3>Our Gallery</h3>
+  <div class="spotlight-group text-center" data-fit="cover" data-autohide="all">
+        <a class="spotlight" href="{% static 'gallery/brooklyn-bridge-1791001.jpg' %}" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/brooklyn-bridge-1791001-thumb.jpg' %}" alt="Lorem ipsum dolor sit amet">
+        </a>
+        <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+        </a>
+        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        </a>
+<a class="spotlight" href="{% static 'gallery/brooklyn-bridge-1791001.jpg' %}" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/brooklyn-bridge-1791001-thumb.jpg' %}" alt="Lorem ipsum dolor sit amet">
+        </a>
+        <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+        </a>
+        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        </a>
+         <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+        </a>
+        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        </a>
+    </div>
   </div>
 </section>
 
 
+
+
+
+
+
+
+
+   <section class="form-container">
+    <div class="container form-section">
+      
+        <h2>REQUEST MORE INFORMATION</h2>
+        <h6>WANT TO HEAR MORE ABOUT OUR SCHOOL?</h6>
+     <div class="contact-form">
+<h4>Please fill in the below</h4>
+<div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>First Name*</label>
+                        <input type="text" class="form-control" placeholder="First Name ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Last Name*</label>
+                        <input type="text" class="form-control" placeholder="Last Name ...">
+                      </div>
+                    </div>
+                     <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Email*</label>
+                        <input type="text" class="form-control" placeholder="Email ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Phone*</label>
+                        <input type="text" class="form-control" placeholder="Phone ...">
+                      </div>
+                    </div>
+                     <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Text*</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Text Disabled*</label>
+                        <input type="text" class="form-control" placeholder="Enter ...">
+                      </div>
+                    </div>
+
+                  </div>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  SUBMIT
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"><img src="{% static 'images/school-logo.png' %}"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        The message was successfully delivered
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+    </div>
+   </section>
    <section class="contact-head" style="padding:0px;">
      <img src="{% static 'images/contact-head.png' %}" class="img-fluid" alt="...">
    </section>
@@ -350,7 +447,7 @@
          <div class="row">
            <div class="col-12 col-sm-3 col-lg-3 footer-logo">
              <img src="{% static 'images/logo.png' %}">
-             <p>Stella Maris Convent School started in 2013 at Hanga Maharashtra by the Congregation of the Daughters of Mary. The School is managed by the Society of the Daughters of Mary Chanda.</p>
+             <p>Stella Maris Convent School started in 2013 at Hanga Maharashtra by the Congregation of the Daughters of Mary. The School is managed by the Congregation of the Daughters of Mary.</p>
            </div>
            <div class="col-12 col-sm-3 col-lg-3 quik-lnk">
        
@@ -384,7 +481,7 @@
 </ul>
 </div>
 <div class="contact-details">
-<p><i class="far fa-paper-plane"></i><a href="mailto:stellamarishanga@gmail.com">stellamarishanga@gmail.com</a></p>
+<p><i class="far fa-paper-plane"></i>stellamarishanga@gmail.com</p>
 <p><i class="fas fa-mobile-alt"></i>+91 86 00 31 63 70</p>
 <p><i class="fas fa-mobile-alt"></i>+91 86 00 31 63 70</p>
 </div>
@@ -406,13 +503,7 @@
   </script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script> 
-  <script>
-    setTimeout(function(){
-        if ($('#msg').length > 0) {
-            $('#msg').remove();
-        }
-    }, 5000)
-</script>
+
   <script>
          $('.team-slider').owlCarousel({
              loop: true,            
@@ -449,3 +540,5 @@
     -->
   </body>
 </html>
+
+
