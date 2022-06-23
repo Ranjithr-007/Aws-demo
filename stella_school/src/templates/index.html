@@ -10,7 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="dist/spotlight.bundle.js"></script>
+    <script src="{% static 'dist/spotlight.bundle.js' %}"></script>
 <link rel="stylesheet" href="{% static 'css/new_styles.css' %}">
 
     <link rel="stylesheet" href="{% static 'style.css' %}">
@@ -90,7 +90,7 @@
           <a class="nav-link" href="{% url 'index' %}#board-members-sch">OUR TEACHERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'index' %}#contact">CAREER</a>
+          <a class="nav-link" href="{% url 'index' %}#gallery">GALLERY</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'index' %}#contact">CONTACT US</a>
@@ -282,33 +282,34 @@
 
 
 
-<section class="our-gallery">
+        </li>
+<section id="gallery" class="our-gallery">
   <div class="container">
     <h3>Our Gallery</h3>
   <div class="spotlight-group text-center" data-fit="cover" data-autohide="all">
-        <a class="spotlight" href="{% static 'gallery/brooklyn-bridge-1791001.jpg' %}" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-            <img src="{% static 'gallery/brooklyn-bridge-1791001-thumb.jpg' %}" alt="Lorem ipsum dolor sit amet">
+        <a class="spotlight" href="{% static 'gallery/1.jpg' %}"  data-description="">
+            <img src="{% static 'gallery/1.1.jpg' %}" alt="">
         </a>
-        <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+        <a class="spotlight" href="{% static 'gallery/2.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/2.2.jpg' %}" alt="At vero eos et accusam">
         </a>
-        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
-            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        <a class="spotlight" href="{% static 'gallery/3.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/3.3.jpg' %}" alt="Duis autem vel eum iriure dolor">
         </a>
-<a class="spotlight" href="{% static 'gallery/brooklyn-bridge-1791001.jpg' %}" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-            <img src="{% static 'gallery/brooklyn-bridge-1791001-thumb.jpg' %}" alt="Lorem ipsum dolor sit amet">
+<a class="spotlight" href="{% static 'gallery/4.jpg' %}" data-button="Click Me!" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/4.4.jpg' %}" alt="Lorem ipsum dolor sit amet">
         </a>
-        <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+        <a class="spotlight" href="{% static 'gallery/5.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/5.5.jpg' %}" alt="At vero eos et accusam">
         </a>
-        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
-            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        <a class="spotlight" href="{% static 'gallery/6.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/6.6.jpg' %}" alt="Duis autem vel eum iriure dolor">
         </a>
-         <a class="spotlight" href="{% static 'gallery/california-1751455.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
-            <img src="{% static 'gallery/california-1751455-thumb.jpg' %}" alt="At vero eos et accusam">
+         <a class="spotlight" href="{% static 'gallery/7.jpg' %}" data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+            <img src="{% static 'gallery/7.7.jpg' %}" alt="At vero eos et accusam">
         </a>
-        <a class="spotlight" href="{% static 'gallery/canada-2340312.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
-            <img src="{% static 'gallery/canada-2340312-thumb.jpg' %}" alt="Duis autem vel eum iriure dolor">
+        <a class="spotlight" href="{% static 'gallery/1.jpg' %}" data-description="In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.">
+            <img src="{% static 'gallery/1.1.jpg' %}" alt="Duis autem vel eum iriure dolor">
         </a>
     </div>
   </div>
