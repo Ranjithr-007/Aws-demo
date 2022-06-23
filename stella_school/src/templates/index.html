@@ -75,25 +75,25 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT US</a>
+          <a class="nav-link" href="{% url 'index' %}#about_school">ABOUT US</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">ADMISSION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">COMMUNITY PORTAL</a>
+          <a class="nav-link" href="{% url 'documents' %}">DOCUMENTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">OUR TEACHERS</a>
+          <a class="nav-link" href="{% url 'index' %}#board-members-sch">OUR TEACHERS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CAREER</a>
+          <a class="nav-link" href="{% url 'index' %}#contact">CAREER</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACT US</a>
+          <a class="nav-link" href="{% url 'index' %}#contact">CONTACT US</a>
         </li>
         
         
@@ -185,7 +185,7 @@
 </section>
 
 
-<section class="our-teachers" id="team">
+<section id="board-members-sch" class="our-teachers" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -206,70 +206,28 @@
               
               
             <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3070px, 0px, 0px); transition: all 0.45s ease 0s; width: 4826px;"><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Sindhu_Joseph.png' %}"></div>
+                <div class="info-area">
+                  <h4>REV. Sr. Sindhu Joseph (MA B. Ed)</h4>
+                  <p>Designation:- Principal</p>
+                </div>
+              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mother_Rita_Jose.png' %}"></div>
+                <div class="info-area">
+                  <h4>Mother Rita Jose D. M.  (MA B. Ed)</h4>
+                  <p>Designation:- President Of Society</p>
+                </div>
+              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
                 <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Maria.png' %}"></div>
                 <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/593GTHB7/4.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/tJCrp53r/5.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                  <h4>REV. Sr. Flower Maria D. M. (M. A.)</h4>
+                  <p>Designation:- Manager</p>
                 </div>
               </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
+                <div class="img-area"><img alt="" class="img-fluid move-animation" src="{% static 'images/Mariet_Antony.png' %}"></div>
                 <div class="info-area">
-                  <h4>JEREMY DUPONT</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/593GTHB7/4.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/tJCrp53r/5.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item cloned active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
-                <div class="info-area">
-                  <h4>JEREMY DUPONT</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item cloned active" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
-                </div>
-              </div></div><div class="owl-item cloned" style="width: 418.667px; margin-right: 20px;"><div class="single-box text-center">
-                <div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
-                <div class="info-area">
-                  <h4>Person's Name</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p>
+                  <h4>REV. Sr. Mariet Antony D. M. (MA. B. Ed)</h4>
+                  <p>Designation:- Vice Principal</p>
                 </div>
               </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
           </div>
